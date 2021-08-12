@@ -651,7 +651,7 @@ int main(const int argc, const char **argv)
 
         /* Load DPU Kernels for YOLO-v3 network model */
         DPUKernel *kernel = dpuLoadKernel(KERNEL_NAME);
-        vector<DPUTask *> task(6);
+        vector<DPUTask *> task(4);
 
         /* Create 4 DPU Tasks for YOLO-v3 network model */
         generate(task.begin(), task.end(),
@@ -662,7 +662,7 @@ int main(const int argc, const char **argv)
         - 4 identical threads for running YOLO-v3 network model
         - 1 thread for displaying frame in monitor
         */
-        array<thread, 8> threadsList = {
+        array<thread, 6> threadsList = {
             thread(readCameraFrame),
             // thread(readCameraFrame, std::ref(cap)),
             thread(displayFrameStream),
@@ -670,8 +670,8 @@ int main(const int argc, const char **argv)
             thread(runYOLO_video, task[1]),
             thread(runYOLO_video, task[2]),
             thread(runYOLO_video, task[3]),
-	    thread(runYOLO_video, task[4]),
-	    thread(runYOLO_video, task[5])
+            // thread(runYOLO_video, task[4]),
+            // thread(runYOLO_video, task[5])
        };
 
         for (int i = 0; i < thread_count; i++){
@@ -696,6 +696,7 @@ int main(const int argc, const char **argv)
         cout << "Usage of this exe: ./yolo image_name[string] i" << endl;
         cout << "Usage of this exe: ./yolo video_name[string] v" << endl;
         cout << "Usage of this exe: ./yolo camera c" << endl;
+        cout << "Usage of this exe: ./yolo camera cs" << endl;
         return -1;
     }
 }
