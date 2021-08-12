@@ -51,7 +51,7 @@ After finish, you'll see an excecutable file ***yolo*** under same directory, yo
    - This mode the program will read the video file which user specified and perform detection. Then showing the detection result.
 3. Camera mode:```yolo camera -c```
    - In This mode, the program will read the image from USB camera and perform detection. Then perform detection and showing the result.
-4. Camera Streaming mode:```yolo camera -cs```
+4. MJPEG streaming mode:```yolo camera -cs```
    - In this mode, the program will read the image from USB camera and perform detection. Then streaming the result through HTTP streaming server. The default port is ```7777``` and user can get the streaming content by browsing ```http://<IP address of FPGA>:7777```.
 <!--slide:https://drive.google.com/file/d/13tejWLNMesSYHnvtSpyGJQ7GeOpSTJsX/view?usp=sharing-->
 <!--A thing of beauty I know will never fade away.-->
