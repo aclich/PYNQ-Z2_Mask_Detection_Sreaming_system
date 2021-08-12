@@ -7,7 +7,7 @@ The detecting model is from [lp6m](https://github.com/lp6m) / [tiny_yolov3_face_
 ## Android app demo:
 Two main interface in app, It will be setting page in the begining and after entering FPGA IP address as streaming source then click save, the screen will transit to streaming page and start to recive the image data from PYNQ-Z2 if it's already running the main application. 
 <img src="app_pic.png"/>
-<img src="https://i.imgur.com/wwH9eUG.gif" alt="drawing" width="300"/> 
+<img src="https://i.imgur.com/OMaCDEs.gif" alt="drawing" width="300"/>
 
 ## System Architecture
 <img src="sys_arch.png" >
