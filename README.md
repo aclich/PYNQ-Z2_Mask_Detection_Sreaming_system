@@ -14,7 +14,7 @@ Two main interface in app, It will be setting page in the begining and after ent
 Capture the image data from USB camera and perform detection tasks with DPU accelerate and encode the detected frame in MJPEG then write in streaming.
 
 ## Quick Start
-1. Download the custom PYNQ-Z2 image from [here](https://drive.google.com/file/d/1Vmt0k3idkBbZIQvs4ZhaU1z1AxDdqWB7/view?usp=sharing). And flash into a SD card as a booting disk.(Minimum 16GB SD-card recommended) For the detail about board setup, please refer to the [official documentation](https://pynq.readthedocs.io/en/latest/getting_started/pynq_z2_setup.html).  
+1. Download the custom PYNQ-Z2 image from [here](https://drive.google.com/file/d/1seN3JbUqXAViNvDaH-hraOcrsKgmP8KR/view?usp=sharing). And flash into a SD card as a booting disk.(Minimum 16GB SD-card recommended) For the detail about board setup, please refer to the [official documentation](https://pynq.readthedocs.io/en/latest/getting_started/pynq_z2_setup.html).  
 
 2. In the first time booting up the system, please run the following script with sudo authority. The password is ```xilinx```
     ```
