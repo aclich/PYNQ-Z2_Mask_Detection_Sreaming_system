@@ -462,7 +462,7 @@ void runYOLO_video(DPUTask *task)
         mtxQueueInput.lock();
         if (queueInput.empty())
         {
-	    cout << "Input queue empty, camera caputre & image preprocessing too slow!!!\n";
+	    //cout << "Input queue empty, camera caputre & image preprocessing too slow!!!\n";
             mtxQueueInput.unlock();
             if (bReading)
             {
